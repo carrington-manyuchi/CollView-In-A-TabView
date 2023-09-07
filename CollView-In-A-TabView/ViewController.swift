@@ -11,6 +11,7 @@ class ViewController: UIViewController {
     
     var models = [Model]()
     
+        
     private let tableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -20,10 +21,18 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        models.append(Model(text: "First", imageName: "1"))
+        
+        models.append(Model(text: "Second", imageName: "2"))
+        
+        models.append(Model(text: "Three", imageName: "3"))
+
         setupUI()
     }
 
     func setupUI() {
+        view.backgroundColor = .systemPink
         tableView.delegate = self
         tableView.dataSource = self
         view.addSubview(tableView)
@@ -35,7 +44,7 @@ class ViewController: UIViewController {
             tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+            tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
         ]
         
         NSLayoutConstraint.activate(tableViewConstraints)
@@ -43,7 +52,7 @@ class ViewController: UIViewController {
 
 }
 
-
+//MARK: - TableView delegates and datasource
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -51,7 +60,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return models.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -59,6 +68,12 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             print("Could not dequeue collection Table View cell")
             return UITableViewCell()
         }
+        
+        cell.configure(with: models)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return CGFloat(250.0)
     }
 }

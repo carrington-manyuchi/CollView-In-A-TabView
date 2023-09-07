@@ -14,6 +14,7 @@
 		8C99DE862AA9DE7D009381AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C99DE842AA9DE7D009381AF /* LaunchScreen.storyboard */; };
 		8C99DE8E2AA9E1BE009381AF /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C99DE8D2AA9E1BD009381AF /* Model.swift */; };
 		8C99DE902AA9E27E009381AF /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C99DE8F2AA9E27E009381AF /* CollectionTableViewCell.swift */; };
+		8C99DE922AA9E988009381AF /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C99DE912AA9E988009381AF /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		8C99DE872AA9DE7D009381AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C99DE8D2AA9E1BD009381AF /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		8C99DE8F2AA9E27E009381AF /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
+		8C99DE912AA9E988009381AF /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				8C99DE7B2AA9DE7B009381AF /* SceneDelegate.swift */,
 				8C99DE7D2AA9DE7B009381AF /* ViewController.swift */,
 				8C99DE8F2AA9E27E009381AF /* CollectionTableViewCell.swift */,
+				8C99DE912AA9E988009381AF /* CollectionViewCell.swift */,
 				8C99DE8D2AA9E1BD009381AF /* Model.swift */,
 				8C99DE822AA9DE7D009381AF /* Assets.xcassets */,
 				8C99DE842AA9DE7D009381AF /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 			files = (
 				8C99DE902AA9E27E009381AF /* CollectionTableViewCell.swift in Sources */,
 				8C99DE7E2AA9DE7B009381AF /* ViewController.swift in Sources */,
+				8C99DE922AA9E988009381AF /* CollectionViewCell.swift in Sources */,
 				8C99DE7A2AA9DE7B009381AF /* AppDelegate.swift in Sources */,
 				8C99DE7C2AA9DE7B009381AF /* SceneDelegate.swift in Sources */,
 				8C99DE8E2AA9E1BE009381AF /* Model.swift in Sources */,
